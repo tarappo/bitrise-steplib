@@ -1,0 +1,52 @@
+title: sample
+summary: |
+  sample step
+description: |
+  sample step
+website: https://github.com/https://github.com/tarappo/xcode_result_bundle_reporter/bitrise-step-sample
+source_code_url: https://github.com/https://github.com/tarappo/xcode_result_bundle_reporter/bitrise-step-sample
+support_url: https://github.com/https://github.com/tarappo/xcode_result_bundle_reporter/bitrise-step-sample/issues
+published_at: 2021-08-25T15:51:41.482701+09:00
+source:
+  git: https://github.com/tarappo/bitrise-step-sample.git
+  commit: 005dc6df4d0444c15b03a26ec2f41e6098192a4d
+host_os_tags:
+- osx-10.10
+- ubuntu-16.04
+type_tags:
+- test
+toolkit:
+  bash:
+    entry_file: step.sh
+deps:
+  brew:
+  - name: git
+  - name: wget
+  apt_get:
+  - name: git
+  - name: wget
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ""
+inputs:
+- example_step_input: Default Value - you can leave this empty if you want to
+  opts:
+    description: |
+      Description of this input.
+
+      Can be Markdown formatted text.
+    is_expand: true
+    is_required: true
+    summary: Summary. No more than 2-3 sentences.
+    title: Example Step Input
+    value_options: []
+outputs:
+- EXAMPLE_STEP_OUTPUT: null
+  opts:
+    description: |
+      Description of this output.
+
+      Can be Markdown formatted text.
+    summary: Summary. No more than 2-3 sentences.
+    title: Example Step Output
